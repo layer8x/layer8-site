@@ -19,6 +19,7 @@
       color: $jumbotron-color;
       width: 100%;
       position: absolute;
+      background-color: rgba(0, 0, 0, 0.6);
 
       @media screen and (min-width: $screen-sm-min) {
         padding-top:    ($jumbotron-padding * 1.6);

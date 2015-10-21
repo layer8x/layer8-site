@@ -1,3 +1,5 @@
+collections:
+  - projects
 
 # Build settings
 markdown: kramdown
