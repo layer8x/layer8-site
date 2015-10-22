@@ -5,7 +5,7 @@ if ($('#hero').length > 0) {
     var solidColor = 'rgb(55, 90, 127)';
     var transitioning = false;
     var speed = 200;
-    var transistionOffset = $('main').position().top - 80;
+    var transistionOffset = $('#main-index').position().top - 80;
 
     function transistionColor(event) {
       transitioning = true;
