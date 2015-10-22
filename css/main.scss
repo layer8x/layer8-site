@@ -44,6 +44,18 @@ footer.section {
   position: absolute;
   bottom: 0;
   width: 100%;
+
+  hr {
+    border-top-color: $brand-info;
+  }
+
+  a.icon {
+    color: $brand-info;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
 }
 
 .clear {
