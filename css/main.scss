@@ -14,11 +14,30 @@ html {
 }
 
 body {
-  margin-bottom: 260px;
+  padding-bottom: 20px;
+  margin-bottom: 400px;
+
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 280px;
+  }
+  @media (min-width: $screen-md-min) {
+    margin-bottom: 217px;
+  }
+  @media (min-width: $screen-lg-min) {
+    margin-bottom: 196px;
+  }
 }
 
 main.container {
   margin-top: 100px;
+
+  img {
+    @include img-responsive;
+  }
+
+  aside {
+    margin: 1em;
+  }
 }
 
 footer.section {
