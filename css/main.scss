@@ -7,44 +7,40 @@
 @import "bootstrap";
 @import "bootswatch";
 
-.carousel-inner {
-  .item {
-    position: relative;
+#hero {
+  .overlay {
+    margin-top: 100px;
+    padding-top:    $jumbotron-padding;
+    padding-bottom: $jumbotron-padding;
+    margin-bottom: $jumbotron-padding;
+    color: $jumbotron-color;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
 
-    .overlay {
-      margin-top: 100px;
-      padding-top:    $jumbotron-padding;
-      padding-bottom: $jumbotron-padding;
-      margin-bottom: $jumbotron-padding;
-      color: $jumbotron-color;
-      width: 100%;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.6);
-
-      @media screen and (min-width: $screen-sm-min) {
-        padding-top:    ($jumbotron-padding * 1.6);
-        padding-bottom: ($jumbotron-padding * 1.6);
-
-        h1,
-        .h1 {
-          font-size: $jumbotron-heading-font-size;
-        }
-      }
+    @media screen and (min-width: $screen-sm-min) {
+      padding-top:    ($jumbotron-padding * 1.6);
+      padding-bottom: ($jumbotron-padding * 1.6);
 
       h1,
       .h1 {
-        color: $jumbotron-heading-color;
+        font-size: $jumbotron-heading-font-size;
       }
+    }
 
-      p {
-        margin-bottom: ($jumbotron-padding / 2);
-        font-size: $jumbotron-font-size;
-        font-weight: 200;
-      }
+    h1,
+    .h1 {
+      color: $jumbotron-heading-color;
+    }
 
-      > hr {
-        border-top-color: darken($jumbotron-bg, 10%);
-      }
+    p {
+      margin-bottom: ($jumbotron-padding / 2);
+      font-size: $jumbotron-font-size;
+      font-weight: 200;
+    }
+
+    > hr {
+      border-top-color: darken($jumbotron-bg, 10%);
     }
   }
 }
