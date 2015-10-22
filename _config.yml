@@ -1,5 +1,8 @@
-collections:
-  - projects
+projects:
+  - title: 'Pirate Intranet'
+    permalink: 'projects/pirate-intranet.html'
+    description: "A secure, over-the-air, transparent meshnet"
+
 
 # Build settings
 markdown: kramdown

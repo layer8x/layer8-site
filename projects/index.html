@@ -1,0 +1,23 @@
+---
+layout: page
+---
+
+<div class="list-group">
+  {% for project in site.projects %}
+  <a class="list-group-item" href="/{{ project.permalink }}">
+    {% if project.image %}
+      <img src="{{ project.image }}" class="pull-right">
+    {% endif %}
+
+    <h3 class="list-group-item-heading">
+      {{ project.title }}
+    </h3>
+
+    {% if project.description %}
+      <p class="list-group-item-text">
+        {{ project.description }}
+      </p>
+    {% endif %}
+  </a>
+  {% endfor %}
+</div>

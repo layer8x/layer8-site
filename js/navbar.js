@@ -5,10 +5,11 @@ if ($('#hero').length > 0) {
     var solidColor = 'rgb(55, 90, 127)';
     var transitioning = false;
     var speed = 200;
+    var transistionOffset = $('main').position().top - 80;
 
     function transistionColor(event) {
       transitioning = true;
-      if ($(window).scrollTop() > 796) {
+      if ($(window).scrollTop() > transistionOffset) {
         if ($navbar.css('background-color') == transparentColor) {
           $navbar.animate({'background-color': solidColor}, speed);
         }
@@ -20,16 +21,20 @@ if ($('#hero').length > 0) {
       transitioning = false;
     }
 
-    $(window).scroll(function (e) {
+    function transitionCheck(event) {
       if (transitioning) {
         return
       } else {
-        transistionColor(e);
+        transistionColor(event);
       }
-    });
+    }
+
+    $(window).scroll(transitionCheck);
+
+    $(window).resize(transitionCheck);
 
     $(function () {
-      if ($(window).scrollTop() > 796) {
+      if ($(window).scrollTop() > transistionOffset) {
         $navbar.css('background-color', solidColor);
       } else {
         $navbar.css('background-color', transparentColor);
