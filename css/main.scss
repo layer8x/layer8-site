@@ -62,6 +62,10 @@ footer.section {
   clear: both;
 }
 
+.subdued {
+  color: $gray-light;
+}
+
 #hero {
   img.background {
     @include img-responsive;

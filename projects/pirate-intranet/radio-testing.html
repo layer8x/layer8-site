@@ -1,0 +1,54 @@
+---
+layout: page
+---
+
+<h1>Pirate Intranet</h1>
+
+<ol class="breadcrumb">
+  <li><a href="/projects/pirate-intranet">Pirate Intranet</a></li>
+  <li class="active">Radio Testing</li>
+</ol>
+
+<h2>Radio Testing</h2>
+
+<a name="february-2016-tests"></a>
+<h3>February 2016 Tests</h3>
+
+<p>
+  <a href="https://github.com/xNightMare">NightMare</a> and <a href="https://github.com/sapslaj">sapslaj</a> tested out two <a href="https://www.ubnt.com/airmax/nanostationm/">NanoStation locoM2's</a> in February on a rainy Sunday. Initial testing was successful, even in not ideal conditions. But we do bring up a few points:
+  <ul>
+    <li>
+      <strong>These antennas are <em>very</em> directional, even with the semi-directional patch antennas.</strong>
+      <br />
+      As expected, the closer to directly pointing at each other they are, the better the performance. But even at low range we saw significant performance improvements from tweaking the alignment, even by only a few degrees.
+    </li>
+    <li>
+      <strong>2.4 GHz non-AC isn't very fast.</strong>
+      <br />
+      Admittedly we did very few good speed tests, but we saw anywhere from 30 to 60 Mbps using <a href="http://www.speedtest.net/">Speedtest.net</a>. We did note that latency was not a problem at all, managing no noticeable increases in latency when doing ping tests.
+    </li>
+    <li>
+      <strong>Very suseptible to obstructions.</strong>
+      <br />
+      2.4 GHz can go through walls and trees much better than 5 GHz, as expected, but it significantly degrades performace. We got better performance over a longer distance with Line-of-Site than a shorter distance going through a few obstructions.
+    </li>
+  </ul>
+
+  We should also note that we tested in an area with both 5 GHz and 2.4 GHz home access points active, at one point with the locoM2 AP directly next to a Linksys wireless router. We would like to do more testing to see the effects of interference.
+</p>
+<hr />
+<p>
+  Overall, very sucessfull prelimiary tests. For our next tests, we want to test:
+
+  <ol>
+    <li>
+      Performance over long distance (in the multiple km range, up to 25 km).
+    </li>
+    <li>
+      Interference effects, both from our radios and from residential appliances.
+    </li>
+    <li>
+      How using 5 GHz AC radios helps performance.
+    </li>
+  </ol>
+</p>

@@ -1,6 +1,6 @@
 projects:
   - title: 'Pirate Intranet'
-    permalink: 'projects/pirate-intranet.html'
+    permalink: 'projects/pirate-intranet/'
     description: "A secure, over-the-air, transparent meshnet"
 
 
